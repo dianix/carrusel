@@ -8,6 +8,10 @@
 </head>
 
 <body>
+    <header>
+        <h1>Carrusel con jQuery</h1>
+    </header>
+    
     <section id="carrusel">
         <div id="imagenes">
             <img id="1" class="imag" src="assets/imgs/macro-dew-drops.jpg">
@@ -16,15 +20,15 @@
             <img id="4" class="imag oculta" src="assets/imgs/nature-spiral.jpg">
         </div>
 
-        <div id="botones">
-            <span class="puntero">&#10094;</span>
-            <div id="selectores">
+        <div id="botones" class="flex">
+            <span id="izq" class="puntero">&#10094;</span>
+            <div id="selectores" class="flex">
                 <span class="selector puntero" id="sel1"></span>
                 <span class="selector puntero" id="sel2"></span>
                 <span class="selector puntero" id="sel3"></span>
                 <span class="selector puntero" id="sel4"></span>
             </div>
-            <span class="puntero">&#10095;</span>
+            <span id="der" class="puntero">&#10095;</span>
         </div>
     </section>
 
